@@ -1,0 +1,24 @@
+modules:
+
+  # Add support for VirtualBox.
+  - type: akmods
+    install:
+      - VirtualBox
+
+  - type: rpm-ostree
+    install:
+      - python3-pip
+      - virt-manager
+      - VirtualBox
+      - wireshark
+      - fish
+      - ddcutil
+
+  - type: files
+    files:
+      - common/usr: /usr
+
+  - type: systemd
+    system:
+      enabled:
+        - disable-intel-turboboost.service

@@ -1,0 +1,15 @@
+modules:
+
+  - type: rpm-ostree
+    install:
+      # Needed for Pano clipboard.
+      - libgda
+      - libgda-sqlite
+
+  - type: files
+    files:
+      - gnome/usr: /usr
+
+  - type: script
+    scripts:
+      - gnome/custom-gnome-shell.sh
