@@ -13,7 +13,7 @@ ACCENT_COLOR_DARK=$(awk '/@define-color accent_color/{ print substr( $3, 1, leng
 THEME_PATH="/usr/share/themes"
 SHELL_VERSION="$(gnome-shell --version | awk '{print $3}')"
 WORKDIR="/tmp/gnome-shell"
-SASSC_BIN="${CONFIG_DIRECTORY}/scripts/gnome/sassc"
+SASSC_BIN="${CONFIG_DIRECTORY}/scripts/sassc"
 
 echo "Creating a gnome-shell theme with a custom accent.."
 

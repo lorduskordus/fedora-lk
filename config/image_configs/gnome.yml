@@ -12,4 +12,4 @@ modules:
 
   - type: script
     scripts:
-      - gnome/custom-gnome-shell.sh
+      - custom-gnome-shell.sh
