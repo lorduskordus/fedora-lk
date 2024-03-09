@@ -1,6 +1,8 @@
 # Fedora LK &nbsp; [![build-ublue](https://github.com/lorduskordus/fedora-lk/actions/workflows/build.yml/badge.svg)](https://github.com/lorduskordus/fedora-lk/actions/workflows/build.yml)
 
-My custom images based on the [BlueBuild](https://blue-build.org/) project. You can [make your own](https://blue-build.org/how-to/setup/) !
+Custom Linux OS images built with ease using the [BlueBuild](https://blue-build.org/) project. BlueBuild is a collection of tools and documentation that allows to easily build custom images, without having to know about stuff like containerfiles, that are common to image building. You can [make your own](https://blue-build.org/how-to/setup/) !
+
+These images are built on top of the 'minimal' [Fedora Generic](https://github.com/lorduskordus/fedora-generic) images and personalized to my liking, I daily drive these.
 
 ## ISO
 
