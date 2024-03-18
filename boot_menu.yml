@@ -1,6 +1,0 @@
-ublue_variants:
-  - label: lorduskordus/fedora-lk
-    ks: /kickstart/ublue-os.ks
-    flavors:
-      - label: fedora-lk-gnome
-      - label: fedora-lk-kde

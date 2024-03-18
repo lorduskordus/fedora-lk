@@ -4,10 +4,6 @@ Custom Linux OS images built with ease using the [BlueBuild](https://blue-build.
 
 These images are built on top of the 'minimal' [Fedora Generic](https://github.com/lorduskordus/fedora-generic) images and personalized to my liking, I daily drive these.
 
-## ISO
-
-Get it [here](https://github.com/lorduskordus/fedora-lk/releases/tag/auto-iso).
-
 ## Images
 
 ##### GNOME
