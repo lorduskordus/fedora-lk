@@ -1,0 +1,1 @@
+test -d /home/linuxbrew/.linuxbrew; and status --is-interactive; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv | source)
