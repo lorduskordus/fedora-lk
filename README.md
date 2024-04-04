@@ -6,15 +6,15 @@ The **BlueBuild** project makes image building easy by allowing you to declare y
 
 The **Universal Blue (uBlue)** project, a.k.a. Fedora Atomic on steroids, takes Fedora Atomic OCI images and adds QoL changes on top, that Fedora itself can't, like NVIDIA drivers or codecs.
 
-These images are built on top of the 'minimal' [Fedora Generic](https://github.com/lorduskordus/fedora-generic) images and personalized to my liking, I daily drive these.
+These images are built on top of the 'minimal' [Fedora Base](https://github.com/lorduskordus/fedora-base) images and personalized to my liking, I daily drive these.
 
 ## Images
 
-##### GNOME
+##### GNOME (NVIDIA)
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-gnome
 ```
-##### KDE
+##### KDE (NVIDIA)
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-kde
 ```
