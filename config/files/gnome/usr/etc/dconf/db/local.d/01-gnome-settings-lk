@@ -1,4 +1,6 @@
 [org/gnome/desktop/input-sources]
+per-window=true
+show-all-sources=true
 sources=[('xkb', 'cz'), ('xkb', 'cz+coder')]
 
 [org/gnome/nautilus/preferences]
