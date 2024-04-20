@@ -1,7 +1,7 @@
 name: fedora-lk-kde
 description: Custom Fedora KDE image based on uBlue, built with BlueBuild. (My personal, with NVIDIA support)
 
-base-image: ghcr.io/lorduskordus/fedora-base-kde-nvidia
+base-image: ghcr.io/lorduskordus/fedora-base-beta-kde-nvidia
 image-version: latest
 
 modules:
