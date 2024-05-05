@@ -22,7 +22,7 @@ modules:
   # Note: In case I'm not enabling/disabling anything in the future,
   #       the '- type: systemd' needs to stay, so the module runs and
   #       copies over any service files present in the systemd folder.
-  #       Alternatively, I can just put the file in '/usr/lib/systemd/x'
+  #       Alternatively, I can just put the files in '/usr/lib/systemd/x'
   #       myself and remove this entirely.
   # -------------------------------------------------------------------- #
   - type: systemd
