@@ -8,7 +8,7 @@ modules:
   - type: rpm-ostree
     repos:
       # COSMIC DE
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/%OS_VERSION%/ryanabx-cosmic-epoch.repo
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch.repo
     install:
       - python3-pip
       - virt-manager
@@ -22,13 +22,6 @@ modules:
     files:
       - common/usr: /usr
 
-  # -------------------------------------------------------------------- #
-  # Note: In case I'm not enabling/disabling anything in the future,
-  #       the '- type: systemd' needs to stay, so the module runs and
-  #       copies over any service files present in the systemd folder.
-  #       Alternatively, I can just put the files in '/usr/lib/systemd/x'
-  #       myself and remove this entirely.
-  # -------------------------------------------------------------------- #
   - type: systemd
     system:
       enabled:
