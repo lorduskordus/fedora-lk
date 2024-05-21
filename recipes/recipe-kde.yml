@@ -10,4 +10,4 @@ modules:
   - from-file: image_configs/common.yml
   
   # KDE
-  #- from-file: image_configs/kde.yml
+  - from-file: image_configs/kde.yml
