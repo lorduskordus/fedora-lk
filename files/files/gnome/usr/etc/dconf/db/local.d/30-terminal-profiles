@@ -1,6 +1,6 @@
 [org/gnome/terminal/legacy/profiles:]
 default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'fb759632-ce4d-4a00-a490-3349cc9edbc3', 'a8fcbd4a-4565-44ca-8de9-0be3e597103f']
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'fb759632-ce4d-4a00-a490-3349cc9edbc3', 'a8fcbd4a-4565-44ca-8de9-0be3e597103f', 'e854553d-0b85-4116-bd50-57a69e5b70c4']
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 cursor-shape='ibeam'
@@ -28,3 +28,12 @@ title='arch'
 title-mode='after'
 use-custom-command=true
 visible-name='arch'
+
+[/org/gnome/terminal/legacy/profiles:/:e854553d-0b85-4116-bd50-57a69e5b70c4]
+cursor-shape='ibeam'
+custom-command='/usr/bin/distrobox-enter debian'
+default-size-columns=105
+title='debian'
+title-mode='after'
+use-custom-command=true
+visible-name='debian'
