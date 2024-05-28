@@ -17,5 +17,5 @@ modules:
   - type: gnome-extensions
     install:
       - Brightness control using ddcutil
-      - Pano - Clipboard Manager
-      - [QSTweak] Quick Setting Tweaker
+      - '[QSTweak] Quick Setting Tweaker'
+      #- Pano - Clipboard Manager # This is still not pushed to EGO.
