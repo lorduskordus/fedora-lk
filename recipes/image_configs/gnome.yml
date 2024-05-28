@@ -13,3 +13,9 @@ modules:
   - type: script
     scripts:
       - custom-gnome-shell.sh
+
+  - type: gnome-extensions
+    install:
+      - Brightness control using ddcutil
+      - Pano - Clipboard Manager
+      - [QSTweak] Quick Setting Tweaker
