@@ -1,5 +1,5 @@
 [org/gnome/shell]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'display-brightness-ddcutil@themightydeity.github.com', 'quick-settings-tweaks@qwreey']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'display-brightness-ddcutil@themightydeity.github.com']
 
 [org/gnome/shell/extensions/pano]
 global-shortcut=['<Super>v']
@@ -15,12 +15,6 @@ body-bg-color='rgb(192,191,188)'
 [org/gnome/shell/extensions/pano/text-item]
 body-bg-color='rgb(192,191,188)'
 header-bg-color='rgb(46,108,52)'
-
-[org/gnome/shell/extensions/quick-settings-tweaks]
-datemenu-fix-weather-widget=false
-datemenu-remove-media-control=true
-datemenu-remove-notifications=false
-notifications-enabled=false
 
 [org/gnome/shell/extensions/nightthemeswitcher/gtk-variants]
 enabled=true
