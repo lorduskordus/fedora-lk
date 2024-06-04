@@ -22,6 +22,10 @@ modules:
     files:
       - common/usr: /usr
 
+  - type: justfiles
+    include:
+      - common
+
   - type: systemd
     system:
       enabled:
