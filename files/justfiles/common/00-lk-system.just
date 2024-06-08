@@ -1,11 +1,11 @@
 # Set GRUB to auto-hide even with a Windows dual boot
 grub-set-auto-hide-windows:
     #!/usr/bin/env bash
-    if sudo grub2-editenv list | grep -q 'menu_auto_hide=2'; then
+    if pkexec grub2-editenv list | grep -q 'menu_auto_hide=2'; then
         echo "Already set."
         exit 0
     else
-        if sudo grub2-editenv - set menu_auto_hide=2; then
+        if pkexec grub2-editenv - set menu_auto_hide=2; then
             echo "Done."
             exit 0
         else
