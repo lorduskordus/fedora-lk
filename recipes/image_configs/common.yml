@@ -23,6 +23,7 @@ modules:
       - common/usr: /usr
 
   - type: justfiles
+    source: ghcr.io/lorduskordus/modules
     include:
       - common
 
