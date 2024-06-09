@@ -17,4 +17,5 @@ modules:
   - type: gnome-extensions
     install:
       - Brightness control using ddcutil
+      - Fullscreen Notifications
       #- Pano - Clipboard Manager # This is still not pushed to EGO.

@@ -1,5 +1,5 @@
 [org/gnome/shell]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'display-brightness-ddcutil@themightydeity.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'display-brightness-ddcutil@themightydeity.github.com', 'fullscreen-notifications@sorrow.about.alice.pm.me']
 
 [org/gnome/shell/extensions/pano]
 global-shortcut=['<Super>v']
