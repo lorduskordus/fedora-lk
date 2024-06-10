@@ -18,6 +18,20 @@ modules:
       - ddcutil
       - cosmic-desktop
 
+  - type: default-flatpaks
+    source: ghcr.io/lorduskordus/bluebuild-modules
+    system:
+      install:
+        - org.freedesktop.Platform.VulkanLayer.MangoHud//23.08
+        - com.brave.Browser
+        - org.torproject.torbrowser-launcher
+        - com.vysp3r.ProtonPlus
+        - com.usebottles.bottles
+        - com.valvesoftware.Steam
+        - io.gitlab.news_flash.NewsFlash
+        - tv.plex.PlexDesktop
+        - io.github.pwr_solaar.solaar
+
   - type: files
     files:
       - common/usr: /usr
