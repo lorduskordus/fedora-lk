@@ -1,25 +1,17 @@
 [org/gnome/shell]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pano@elhan.io', 'display-brightness-ddcutil@themightydeity.github.com', 'fullscreen-notifications@sorrow.about.alice.pm.me']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'pano@elhan.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'display-brightness-ddcutil@themightydeity.github.com', '[QSTweak] Quick Setting Tweaker', 'fullscreen-notifications@sorrow.about.alice.pm.me']
 
-[org/gnome/shell/extensions/pano]
-global-shortcut=['<Super>v']
-session-only-mode=true
-show-indicator=false
-send-notification-on-copy=false
-play-audio-on-copy=false
-keep-search-entry=false
+[org/gnome/shell/extensions/arcmenu]
+arcmenu-hotkey=['<Super>A']
+runner-hotkey=['Super_L']
+runner-hotkey-open-primary-monitor=false
+runner-menu-height=460
+runner-menu-width=655
+runner-position='Centered'
+runner-search-display-style='Grid'
 
-[org/gnome/shell/extensions/pano/file-item]
-body-bg-color='rgb(192,191,188)'
-
-[org/gnome/shell/extensions/pano/text-item]
-body-bg-color='rgb(192,191,188)'
-header-bg-color='rgb(46,108,52)'
-
-[org/gnome/shell/extensions/nightthemeswitcher/gtk-variants]
-enabled=true
-day='adw-gtk3'
-night='adw-gtk3-dark'
+[org/gnome/shell/extensions/user-theme]
+name='gnome-shell-custom-image-dark'
 
 [org/gnome/shell/extensions/display-brightness-ddcutil]
 button-location=1
@@ -28,17 +20,10 @@ step-change-keyboard=10
 decrease-brightness-shortcut=['<Control>Page_Down']
 increase-brightness-shortcut=['<Control>Page_Up']
 
-[org/gnome/shell/extensions/arcmenu]
-arc-menu-icon=71
-custom-menu-button-icon-size=30.0
-force-menu-location='BottomCentered'
-menu-button-appearance='Icon'
-menu-button-icon='Menu_Icon'
-menu-height=850
-menu-item-grid-icon-size='Large'
-menu-layout='Pop'
-position-in-panel='Center'
-show-activities-button=true
-
-[org/gnome/shell/extensions/user-theme]
-name='gnome-shell-custom-image-dark'
+[org/gnome/shell/extensions/quick-settings-tweaks]
+datemenu-fix-weather-widget=false
+datemenu-remove-notifications=false
+notifications-enabled=false
+add-dnd-quick-toggle-enabled=false
+volume-mixer-enabled=true
+datemenu-remove-media-control=true
