@@ -19,7 +19,6 @@ modules:
       - cosmic-desktop
 
   - type: default-flatpaks
-    source: ghcr.io/lorduskordus/bluebuild-modules
     system:
       install:
         - org.freedesktop.Platform.VulkanLayer.MangoHud//23.08
