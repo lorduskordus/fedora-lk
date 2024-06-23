@@ -7,8 +7,8 @@ modules:
 
   - type: rpm-ostree
     repos:
-      # COSMIC DE
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch.repo
+      # COPR for COSMIC DE
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
       - python3-pip
       - virt-manager
