@@ -21,7 +21,6 @@ modules:
   - type: default-flatpaks
     system:
       install:
-        - org.freedesktop.Platform.VulkanLayer.MangoHud//23.08
         - com.brave.Browser
         - org.torproject.torbrowser-launcher
         - com.vysp3r.ProtonPlus
