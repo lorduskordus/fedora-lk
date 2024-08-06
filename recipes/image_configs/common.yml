@@ -6,9 +6,6 @@ modules:
       - VirtualBox
 
   - type: rpm-ostree
-    repos:
-      # COPR for COSMIC DE
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
       - python3-pip
       - virt-manager
@@ -16,7 +13,6 @@ modules:
       - wireshark
       - fish
       - ddcutil
-      - cosmic-desktop
 
   - type: default-flatpaks
     system:

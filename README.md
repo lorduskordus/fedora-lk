@@ -10,6 +10,10 @@ These images are built on top of the 'minimal' [Fedora Base](https://github.com/
 
 ## Images
 
+##### COSMIC (NVIDIA)
+```
+ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-cosmic
+```
 ##### GNOME (NVIDIA)
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-gnome

@@ -11,3 +11,6 @@ modules:
   
   # KDE
   #- from-file: image_configs/kde.yml
+
+  # Temporarily include COSMIC
+  - from-file: image_configs/include_cosmic.yml

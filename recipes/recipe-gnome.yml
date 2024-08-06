@@ -11,3 +11,6 @@ modules:
   
   # GNOME
   - from-file: image_configs/gnome.yml
+
+  # Temporarily include COSMIC
+  - from-file: image_configs/include_cosmic.yml
