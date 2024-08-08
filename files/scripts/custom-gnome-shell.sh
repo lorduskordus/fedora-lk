@@ -7,7 +7,7 @@ set -oue pipefail
 # Setup variables
 THEME_NAME_LIGHT="gnome-shell-custom-image-light"
 THEME_NAME_DARK="gnome-shell-custom-image-dark"
-ACCENT_FILE="${CONFIG_DIRECTORY}/system/gnome/usr/etc/skel/.config/gtk-4.0/gtk.css"
+ACCENT_FILE="${CONFIG_DIRECTORY}/system/gnome/etc/skel/.config/gtk-4.0/gtk.css"
 ACCENT_COLOR_LIGHT=$(awk '/@define-color accent_bg_color/{ print substr( $3, 1, length($3)-1 ) }' "${ACCENT_FILE}" 2> /dev/null)
 ACCENT_COLOR_DARK=$(awk '/@define-color accent_color/{ print substr( $3, 1, length($3)-1 ) }' "${ACCENT_FILE}" 2> /dev/null)
 THEME_PATH="/usr/share/themes"
