@@ -7,7 +7,7 @@ modules:
 
   - type: script
     scripts:
-      - custom-gnome-shell.sh
+      - gnome/custom-gnome-shell.sh
 
   - type: gnome-extensions
     install:
