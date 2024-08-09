@@ -21,10 +21,9 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          # !! Add your recipes here
-          - recipe-cosmic.yml
-          - recipe-gnome.yml
-          - recipe-kde.yml
+          - cosmic/recipe.yml
+          - gnome/recipe.yml
+          - kde/recipe.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
