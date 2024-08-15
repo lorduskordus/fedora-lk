@@ -26,6 +26,8 @@ modules:
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
 
+  - type: brew
+  
   - type: files
     files:
       - source: system/common
