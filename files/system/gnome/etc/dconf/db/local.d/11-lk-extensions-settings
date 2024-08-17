@@ -11,7 +11,7 @@ runner-position='Centered'
 runner-search-display-style='Grid'
 
 [org/gnome/shell/extensions/user-theme]
-name='gnome-shell-custom-image-dark'
+name='shell-fedora-lk-dark'
 
 [org/gnome/shell/extensions/display-brightness-ddcutil]
 button-location=1
