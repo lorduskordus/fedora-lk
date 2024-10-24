@@ -1,5 +1,5 @@
 [org/gnome/shell]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'pano@elhan.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'display-brightness-ddcutil@themightydeity.github.com', 'quick-settings-tweaks@qwreey', 'fullscreen-notifications@sorrow.about.alice.pm.me']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'tiling-assistant@leleat-on-github', 'nightthemeswitcher@romainvigier.fr', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'pano@elhan.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'display-brightness-ddcutil@themightydeity.github.com', 'fullscreen-notifications@sorrow.about.alice.pm.me']
 
 [org/gnome/shell/extensions/arcmenu]
 arcmenu-hotkey=['<Super>A']
@@ -10,20 +10,9 @@ runner-menu-width=655
 runner-position='Centered'
 runner-search-display-style='Grid'
 
-[org/gnome/shell/extensions/user-theme]
-name='shell-fedora-lk-dark'
-
 [org/gnome/shell/extensions/display-brightness-ddcutil]
 button-location=1
 show-display-name=false
 step-change-keyboard=10
 decrease-brightness-shortcut=['<Control>Page_Down']
 increase-brightness-shortcut=['<Control>Page_Up']
-
-[org/gnome/shell/extensions/quick-settings-tweaks]
-datemenu-fix-weather-widget=false
-datemenu-remove-notifications=false
-notifications-enabled=false
-add-dnd-quick-toggle-enabled=false
-volume-mixer-enabled=true
-datemenu-remove-media-control=true

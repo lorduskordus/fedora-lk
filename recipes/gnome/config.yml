@@ -5,12 +5,7 @@ modules:
       - source: system/gnome
         destination: /
 
-  - type: script
-    scripts:
-      - gnome/custom-gnome-shell.sh
-
   - type: gnome-extensions
     install:
       - Brightness control using ddcutil
-      - 5446 # [QSTweak] Quick Setting Tweaker
       - Fullscreen Notifications
