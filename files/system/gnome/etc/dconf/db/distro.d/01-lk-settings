@@ -5,3 +5,6 @@ sources=[('xkb', 'cz'), ('xkb', 'cz+coder')]
 
 [org/gnome/nautilus/preferences]
 show-delete-permanently=true
+
+[org/gnome/desktop/interface]
+accent-color='green'
