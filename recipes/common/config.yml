@@ -15,7 +15,6 @@ modules:
       - unityhub
       - python3-pip
       - virt-manager
-      - wireshark
       - fish
       - ddcutil
 
@@ -29,11 +28,6 @@ modules:
         - io.gitlab.news_flash.NewsFlash
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
-  
-  # Fix wireshark not adding group
-  - type: script
-    snippets:
-      - "grep -E '^wireshark:' /usr/lib/group | tee -a /etc/group"
       
   - type: brew
   
