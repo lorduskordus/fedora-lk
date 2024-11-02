@@ -9,6 +9,9 @@ modules:
       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
+    optfix:
+      - brave.com
+      - unityhub
     install:
       - brave-browser
       - code
