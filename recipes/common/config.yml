@@ -32,6 +32,10 @@ modules:
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
       
+  - type: script
+    script:
+      - include-podman-host.sh
+  
   - type: brew
   
   - type: files
