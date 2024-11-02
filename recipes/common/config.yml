@@ -31,10 +31,6 @@ modules:
         - io.gitlab.news_flash.NewsFlash
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
-      
-  - type: script
-    script:
-      - include-podman-host.sh
   
   - type: brew
   
