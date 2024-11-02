@@ -33,7 +33,7 @@ modules:
   # Fix wireshark not adding group
   - type: script
     snippets:
-      - "grep -E '^wireshark:' /usr/lib/group | sudo tee -a /etc/group"
+      - "grep -E '^wireshark:' /usr/lib/group | tee -a /etc/group"
       
   - type: brew
   
