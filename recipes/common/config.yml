@@ -1,7 +1,18 @@
 modules:
 
   - type: rpm-ostree
+    repos:
+      - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+      - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/vscode.repo
+      - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/unityhub.repo
+    keys:
+      - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+      - https://packages.microsoft.com/keys/microsoft.asc
+      - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
     install:
+      - brave-browser
+      - code
+      - unityhub
       - python3-pip
       - virt-manager
       - wireshark
@@ -11,7 +22,6 @@ modules:
   - type: default-flatpaks
     system:
       install:
-        - com.brave.Browser
         - org.torproject.torbrowser-launcher
         - com.vysp3r.ProtonPlus
         - com.usebottles.bottles
@@ -19,7 +29,12 @@ modules:
         - io.gitlab.news_flash.NewsFlash
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
-
+  
+  # Fix wireshark not adding group
+  - type: script
+    snippets:
+      - "grep -E '^wireshark:' /usr/lib/group | sudo tee -a /etc/group"
+      
   - type: brew
   
   - type: files
