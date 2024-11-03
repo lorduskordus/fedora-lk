@@ -17,6 +17,7 @@ modules:
       - code
       - unityhub
       - python3-pip
+      - wireshark
       - virt-manager
       - fish
       - ddcutil
