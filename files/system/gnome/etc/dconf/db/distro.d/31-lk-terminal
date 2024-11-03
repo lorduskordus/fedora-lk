@@ -1,7 +1,6 @@
 [org/gnome/Ptyxis]
 profile-uuids=['8a9e7b41cc19b71ceb609f46671a950f']
 default-profile-uuid='8a9e7b41cc19b71ceb609f46671a950f'
-cursor-shape='ibeam'
 
 [org/gnome/Ptyxis/Profiles/8a9e7b41cc19b71ceb609f46671a950f]
 label='Host'
