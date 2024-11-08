@@ -4,5 +4,6 @@ default-profile-uuid='8a9e7b41cc19b71ceb609f46671a950f'
 
 [org/gnome/Ptyxis/Profiles/8a9e7b41cc19b71ceb609f46671a950f]
 label='Host'
+palette='dracula'
 use-custom-command=true
 custom-command='/usr/bin/fish'
