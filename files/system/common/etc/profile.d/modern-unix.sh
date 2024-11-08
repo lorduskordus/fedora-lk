@@ -1,7 +1,7 @@
 # Aliases for modernized versions of common Linux tools
 
 # bat for cat
-alias cat='bat --style=plain --pager=never'
+alias cat='bat --theme=ansi --style=plain --pager=never'
 
 # eza for ls
 alias ls='eza'
