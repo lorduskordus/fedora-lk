@@ -9,3 +9,4 @@ modules:
     install:
       - Brightness control using ddcutil
       - Fullscreen Notifications
+      - Autohide Battery
