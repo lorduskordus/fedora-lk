@@ -8,7 +8,7 @@ setup-brave-hw-decoding:
     DIR_DST="$HOME/.local/share/applications"
     DESKTOP_DST="$DIR_DST/$APP_NAME.desktop"
 
-    OPTIONS="--ozone-platform-hint=auto --enable-features=VaapiVideoDecodeLinuxGL,TouchpadOverscrollHistoryNavigation --use-gl=angle --use-angle=gl"
+    OPTIONS="--ozone-platform-hint=auto --enable-features=AcceleratedVideoDecodeLinuxGL,TouchpadOverscrollHistoryNavigation"
 
     if [[ ! -f "$DESKTOP_DST" ]]; then
         if [[ -f "$DESKTOP_SRC" ]]; then
