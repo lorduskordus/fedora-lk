@@ -3,7 +3,7 @@ setup-brave-hw-decoding:
     #!/usr/bin/env bash
 
     APP_NAME=brave-browser
-    PWA_PREFIX="brave-"
+    DESKTOP_PREFIX="brave-"
     DESKTOP_SRC="/usr/share/applications/$APP_NAME.desktop"
     DIR_DST="$HOME/.local/share/applications"
     DESKTOP_DST="$DIR_DST/$APP_NAME.desktop"
@@ -30,7 +30,7 @@ setup-brave-hw-decoding:
         fi
     fi
 
-    for DESKTOP_FILE in "$DIR_DST"/"$PWA_PREFIX"*.desktop; do
+    for DESKTOP_FILE in "$DIR_DST"/"$DESKTOP_PREFIX"*.desktop; do
         if [[ -f "$DESKTOP_FILE" ]]; then
 
             DESKTOP_NAME=$(grep -m1 "^Name=" "$DESKTOP_FILE" | cut -d= -f2)
