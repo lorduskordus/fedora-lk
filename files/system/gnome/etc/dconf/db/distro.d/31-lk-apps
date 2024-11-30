@@ -1,3 +1,6 @@
+[org/gnome/nautilus/preferences]
+show-delete-permanently=true
+
 [org/gnome/Ptyxis]
 profile-uuids=['8a9e7b41cc19b71ceb609f46671a950f']
 default-profile-uuid='8a9e7b41cc19b71ceb609f46671a950f'

@@ -4,8 +4,5 @@ per-window=true
 show-all-sources=true
 sources=[('xkb', 'cz'), ('xkb', 'us')]
 
-[org/gnome/nautilus/preferences]
-show-delete-permanently=true
-
 [org/gnome/desktop/interface]
 accent-color='green'
