@@ -34,18 +34,23 @@ modules:
         - io.gitlab.news_flash.NewsFlash
         - tv.plex.PlexDesktop
         - io.github.pwr_solaar.solaar
-  
+
   - type: brew
-  
+
   - type: files
     files:
       - source: system/common
         destination: /
-
+  
   - type: justfiles
     validate: true
     include:
       - common
+
+  - type: hide-app-launchers
+    source: ghcr.io/lorduskordus/bluebuild-modules
+    hide:
+      - fish
 
   - type: systemd
     system:
