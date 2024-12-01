@@ -7,8 +7,10 @@ image-version: latest
 modules:
 
   # Common
-  - from-file: common/include_cosmic.yml
   - from-file: common/config.yml
   
   # KDE
   #- from-file: kde/config.yml
+
+  # Temporarily install COSMIC DE
+  - from-file: common/install_cosmic.yml
