@@ -19,8 +19,9 @@ modules:
       - python3-pip
       - wireshark
       - virt-manager
-      - fish
+      - syncthing
       - ddcutil
+      - fish
       - bat
       - eza
 
