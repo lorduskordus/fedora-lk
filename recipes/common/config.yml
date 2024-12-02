@@ -24,6 +24,10 @@ modules:
       - fish
       - bat
       - eza
+  
+  - type: script
+    scripts:
+      - common/brave-enable-flags.sh
 
   - type: default-flatpaks
     system:
