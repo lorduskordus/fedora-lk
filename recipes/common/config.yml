@@ -5,6 +5,7 @@ modules:
       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
       - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/vscode.repo
       - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/unityhub.repo
+      - https://download.docker.com/linux/fedora/docker-ce.repo
     keys:
       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
       - https://packages.microsoft.com/keys/microsoft.asc
@@ -16,6 +17,11 @@ modules:
       - brave-browser
       - code
       - unityhub
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
       - python3-pip
       - wireshark
       - virt-manager
@@ -61,3 +67,4 @@ modules:
     system:
       enabled:
         - disable-intel-turboboost.service
+        - docker.service
