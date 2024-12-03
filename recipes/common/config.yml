@@ -1,5 +1,14 @@
 modules:
 
+  - type: bling
+    install:
+      - rpmfusion
+
+  - type: akmods
+    base: coreos-stable
+    install:
+      - VirtualBox
+
   - type: rpm-ostree
     repos:
       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
@@ -22,6 +31,7 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
+      - VirtualBox
       - python3-pip
       - wireshark
       - virt-manager
