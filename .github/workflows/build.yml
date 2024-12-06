@@ -1,4 +1,5 @@
 name: bluebuild
+
 on:
   schedule:
     - cron: "15 05 * * *" # build at 05:15 UTC every day 
@@ -6,9 +7,14 @@ on:
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
-      
   pull_request:
   workflow_dispatch: # allow manually triggering builds
+
+concurrency:
+  # only run one build at a time
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   bluebuild:
     name: Build Custom Image
@@ -25,7 +31,6 @@ jobs:
           - gnome/recipe.yml
           - kde/recipe.yml
     steps:
-       # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.7
         with:
