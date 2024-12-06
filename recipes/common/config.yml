@@ -5,7 +5,6 @@ modules:
       - rpmfusion
 
   - type: akmods
-    source: ghcr.io/lorduskordus/bluebuild-modules
     base: coreos-stable
     install:
       - VirtualBox
