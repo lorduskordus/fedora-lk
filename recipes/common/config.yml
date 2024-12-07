@@ -12,8 +12,8 @@ modules:
   - type: rpm-ostree
     repos:
       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-      - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/vscode.repo
-      - https://raw.githubusercontent.com/lorduskordus/fedora-lk/refs/heads/main/files/repos/unityhub.repo
+      - vscode.repo
+      - unityhub.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
     keys:
       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
