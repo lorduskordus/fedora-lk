@@ -1,12 +1,4 @@
 modules:
 
-  - type: files
-    files:
-      - source: system/gnome
-        destination: /
-
-  - type: gnome-extensions
-    install:
-      - Brightness control using ddcutil
-      - Fullscreen Notifications
-      - Autohide Battery
+  - from-file: gnome/modules/files.yml
+  - from-file: gnome/modules/gnome_extensions.yml

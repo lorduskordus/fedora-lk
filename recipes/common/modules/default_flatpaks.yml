@@ -1,0 +1,10 @@
+type: default-flatpaks
+system:
+  install:
+    - org.torproject.torbrowser-launcher
+    - com.vysp3r.ProtonPlus
+    - com.usebottles.bottles
+    - com.valvesoftware.Steam
+    - io.gitlab.news_flash.NewsFlash
+    - tv.plex.PlexDesktop
+    - io.github.pwr_solaar.solaar

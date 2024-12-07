@@ -1,80 +1,11 @@
 modules:
 
-  - type: bling
-    install:
-      - rpmfusion
-
-  - type: akmods
-    base: coreos-stable
-    install:
-      - VirtualBox
-
-  - type: rpm-ostree
-    repos:
-      - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-      - vscode.repo
-      - unityhub.repo
-      - https://download.docker.com/linux/fedora/docker-ce.repo
-    keys:
-      - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-      - https://packages.microsoft.com/keys/microsoft.asc
-      - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
-    optfix:
-      - brave.com
-      - unityhub
-    install:
-      - brave-browser
-      - code
-      - unityhub
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-buildx-plugin
-      - docker-compose-plugin
-      - VirtualBox
-      - python3-pip
-      - wireshark
-      - virt-manager
-      - syncthing
-      - ddcutil
-      - fish
-      - bat
-      - eza
-  
-  - type: script
-    scripts:
-      - common/brave-enable-flags.sh
-
-  - type: default-flatpaks
-    system:
-      install:
-        - org.torproject.torbrowser-launcher
-        - com.vysp3r.ProtonPlus
-        - com.usebottles.bottles
-        - com.valvesoftware.Steam
-        - io.gitlab.news_flash.NewsFlash
-        - tv.plex.PlexDesktop
-        - io.github.pwr_solaar.solaar
-
-  - type: brew
-
-  - type: files
-    files:
-      - source: system/common
-        destination: /
-  
-  - type: justfiles
-    validate: true
-    include:
-      - common
-
-  - type: hide-app-launchers
-    source: ghcr.io/lorduskordus/bluebuild-modules
-    hide:
-      - fish
-
-  - type: systemd
-    system:
-      enabled:
-        - disable-intel-turboboost.service
-        - docker.service
+  - from-file: common/modules/add_support_virtualbox.yml
+  - from-file: common/modules/rpm-ostree.yml
+  - from-file: common/modules/add_support_brave_flags.yml
+  - from-file: common/modules/default_flatpaks.yml
+  - from-file: common/modules/brew.yml
+  - from-file: common/modules/files.yml
+  - from-file: common/modules/justfiles.yml
+  - from-file: common/modules/hide_app_launchers.yml
+  - from-file: common/modules/systemd.yml

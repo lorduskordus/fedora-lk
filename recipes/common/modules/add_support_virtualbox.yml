@@ -1,0 +1,14 @@
+modules:
+
+  - type: bling
+    install:
+      - rpmfusion
+
+  - type: akmods
+    base: coreos-stable
+    install:
+      - VirtualBox
+
+  # - type: rpm-ostree
+  #   install:
+  #     - VirtualBox

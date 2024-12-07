@@ -1,0 +1,5 @@
+type: gnome-extensions
+install:
+  - Brightness control using ddcutil
+  - Fullscreen Notifications
+  - Autohide Battery
