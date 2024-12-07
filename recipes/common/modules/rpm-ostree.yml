@@ -1,18 +1,15 @@
 type: rpm-ostree
+source: ghcr.io/lorduskordus/bluebuild-modules
 repos:
-  - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
   - vscode.repo
   - unityhub.repo
   - https://download.docker.com/linux/fedora/docker-ce.repo
 keys:
-  - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
   - https://packages.microsoft.com/keys/microsoft.asc
   - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
 optfix:
-  - brave.com
   - unityhub
 install:
-  - brave-browser
   - code
   - unityhub
   - docker-ce
@@ -20,7 +17,6 @@ install:
   - containerd.io
   - docker-buildx-plugin
   - docker-compose-plugin
-  - VirtualBox
   - python3-pip
   - wireshark
   - virt-manager

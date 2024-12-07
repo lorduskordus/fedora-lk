@@ -1,8 +1,8 @@
 modules:
 
-  - from-file: common/modules/add_support_virtualbox.yml
+  - from-file: common/modules/install_virtualbox.yml
+  - from-file: common/modules/install_brave-browser.yml
   - from-file: common/modules/rpm-ostree.yml
-  - from-file: common/modules/add_support_brave_flags.yml
   - from-file: common/modules/default_flatpaks.yml
   - from-file: common/modules/brew.yml
   - from-file: common/modules/files.yml
