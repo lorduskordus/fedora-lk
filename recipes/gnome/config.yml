@@ -1,4 +1,4 @@
 modules:
 
-  - from-file: gnome/modules/files.yml
-  - from-file: gnome/modules/gnome_extensions.yml
+  - from-file: gnome/config/files.yml
+  - from-file: gnome/config/gnome-extensions.yml

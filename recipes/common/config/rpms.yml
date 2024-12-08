@@ -3,7 +3,6 @@ source: ghcr.io/lorduskordus/bluebuild-modules
 repos:
   - vscode.repo
   - unityhub.repo
-  - https://download.docker.com/linux/fedora/docker-ce.repo
 keys:
   - https://packages.microsoft.com/keys/microsoft.asc
   - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
@@ -12,16 +11,10 @@ optfix:
 install:
   - code
   - unityhub
-  - docker-ce
-  - docker-ce-cli
-  - containerd.io
-  - docker-buildx-plugin
-  - docker-compose-plugin
   - python3-pip
   - wireshark
   - virt-manager
   - syncthing
   - ddcutil
-  - fish
   - bat
   - eza

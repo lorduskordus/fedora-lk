@@ -1,11 +1,12 @@
 modules:
 
-  - from-file: common/modules/install_virtualbox.yml
-  - from-file: common/modules/install_brave-browser.yml
-  - from-file: common/modules/rpm-ostree.yml
-  - from-file: common/modules/default_flatpaks.yml
-  - from-file: common/modules/brew.yml
-  - from-file: common/modules/files.yml
-  - from-file: common/modules/justfiles.yml
-  - from-file: common/modules/hide_app_launchers.yml
-  - from-file: common/modules/systemd.yml
+  - from-file: common/config/virtualbox.yml
+  - from-file: common/config/docker.yml
+  - from-file: common/config/fish.yml
+  - from-file: common/config/brave-browser.yml
+  - from-file: common/config/rpms.yml
+  - from-file: common/config/flatpaks.yml
+  - from-file: common/config/brew.yml
+  - from-file: common/config/files.yml
+  - from-file: common/config/justfiles.yml
+  - from-file: common/config/disable-intel-turboboost.yml

@@ -2,4 +2,3 @@ type: systemd
 system:
   enabled:
     - disable-intel-turboboost.service
-    - docker.service
