@@ -6,15 +6,21 @@ groups ACTION="prompt":
     add_to_group () {
         app="$1"
         if command -v $app &> /dev/null; then
-            grep -E "^${APPS[$app]}:" /usr/lib/group | sudo tee -a /etc/group && sudo usermod -aG "${APPS[$app]}" "${USER}"
-            echo "App: '${bold}$app${normal}'"
-            echo "  - User '${bold}${USER}${normal}' added to group '${bold}${APPS[$app]}${normal}'"
+            if grep -E "^${APPS[$app]}:" /usr/lib/group 2> /dev/null | sudo tee -a /etc/group 2> /dev/null && sudo usermod -aG "${APPS[$app]}" "${USER}" 2> /dev/null; then
+                echo "App: '${bold}$app${normal}'"
+                echo "  - User '${bold}${USER}${normal}' added to group '${bold}${APPS[$app]}${normal}'"
+            else
+                echo "App: '${bold}$app${normal}'"
+                echo "  - Failed adding to group '${bold}${APPS[$app]}${normal}'"
+            fi
         else
             echo "App: '${bold}$app${normal}'"
-            echo "  - Not installed"
+            echo "  - Not a valid option"
+            echo "    - Options: ${bold}${APP_OPTIONS}${normal}"
         fi
     }
 
+    # Associative Array - ["APP"]="APP_GROUP"
     declare -A APPS
     APPS["wireshark"]="wireshark"
     APPS["virt-manager"]="libvirt"
@@ -33,7 +39,7 @@ groups ACTION="prompt":
     fi
 
     if [ "$OPTION" == "all" ]; then
-        for app in "${!APPS[@]}"; do
+        for app in ${APP_OPTIONS}; do
             add_to_group "$app"
         done
     elif [ -n "${OPTION}" ]; then
