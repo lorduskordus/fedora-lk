@@ -11,6 +11,9 @@ optfix:
 install:
   - code
   - unityhub
+  - xeyes
+  - android-tools
+  - telnet
   - wireshark
   - virt-manager
   - syncthing
