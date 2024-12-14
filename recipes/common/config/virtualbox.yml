@@ -5,7 +5,7 @@ modules:
       - rpmfusion
 
   - type: akmods
-    base: coreos-stable
+    base: bazzite
     install:
       - VirtualBox
 
