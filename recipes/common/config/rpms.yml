@@ -20,3 +20,7 @@ install:
   - ddcutil
   - bat
   - eza
+  - steam
+  - lutris
+  - mangohud
+  - goverlay
