@@ -10,6 +10,5 @@ modules:
       - VirtualBox
 
   - type: rpm-ostree
-    source: ghcr.io/lorduskordus/bluebuild-modules
     install:
       - VirtualBox

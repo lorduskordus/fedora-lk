@@ -1,7 +1,6 @@
 modules:
 
   - type: rpm-ostree
-    source: ghcr.io/lorduskordus/bluebuild-modules
     repos:
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
