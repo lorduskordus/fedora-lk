@@ -9,4 +9,5 @@ modules:
   - from-file: common/config/files.yml
   - from-file: common/config/justfiles.yml
   - from-file: common/config/intel-modifications.yml
+  - from-file: common/config/tuned-disable-audio-timeout.yml
   - from-file: common/config/virtualbox.yml
