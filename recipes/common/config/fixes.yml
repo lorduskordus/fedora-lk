@@ -1,3 +1,4 @@
 type: script
 scripts:
   - common/tuned-disable-audio-timeout.sh
+  - common/gpu-change-priority.sh
