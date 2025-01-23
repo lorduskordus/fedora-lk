@@ -12,25 +12,27 @@ OPTIONS='$([ -f "'"$BRAVE_FLAGS_FILE"'" ] \&\& cat "'"$BRAVE_FLAGS_FILE"'" | sed
 ORIGINAL_STR='"$HERE/brave" "$@" || true'
 NEW_STR='"$HERE/brave" "$@" "'$OPTIONS'" || true'
 
+echo "Adding support for flags file inclusion to Brave browser"
+
 if [ -f "$BRAVE_WRAPPER" ]; then
-    echo "Found the wrapper '$BRAVE_WRAPPER'."
+    echo "- Found the wrapper '$BRAVE_WRAPPER'."
 else
-    echo "Error: Could not find the wrapper '$BRAVE_WRAPPER'."
-    echo "Either Brave is not installed, or someone upstream f'd up and changed how Brave is installed."
+    echo "- Error: Could not find the wrapper '$BRAVE_WRAPPER'."
+    echo "    - Either Brave is not installed, or someone upstream f'd up and changed how Brave is installed."
     exit 1
 fi
 
 if grep -qF "$ORIGINAL_STR" "$BRAVE_WRAPPER"; then
-    echo "Found correct string in the wrapper."
+    echo "- Found correct string in the wrapper."
 else
-    echo "Error: Could not find string '$ORIGINAL_STR' in the wrapper."
-    echo "Someone upstream probably f'd up and changed the string."
+    echo "- Error: Could not find string '$ORIGINAL_STR' in the wrapper."
+    echo "    - Someone upstream probably f'd up and changed the string."
     exit 1
 fi
 
 if sed -i "s:$ORIGINAL_STR:$NEW_STR:" "$BRAVE_WRAPPER"; then
-    echo "Successfuly modified the wrapper."
+    echo "- Successfully modified the wrapper."
 else
-    echo "Failed to modify the wrapper."
+    echo "- Error: Failed to modify the wrapper."
     exit 1
 fi
