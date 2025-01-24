@@ -10,6 +10,9 @@ FILE_NEW="${FILE_DIR}/90_nvidia.json"
 
 echo "Changing GPU priority"
 if [ -f "${FILE_ORIG}" ]; then
+    echo "- Found the file '"${FILE_ORIG}"'"
+    
+    echo "- Moving it to '"${FILE_NEW}"'"
     if mv "${FILE_ORIG}" "${FILE_NEW}" &> /dev/null; then
         echo "- Successfully changed priority"
     else
