@@ -2,3 +2,5 @@ type: script
 scripts:
   - common/tuned-disable-audio-timeout.sh
   - common/gpu-change-priority.sh
+  - common/brave-enable-flags.sh
+  - common/containers-add-wrappers.sh

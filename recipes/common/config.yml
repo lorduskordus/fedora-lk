@@ -1,13 +1,11 @@
 modules:
 
-  - from-file: common/config/docker.yml
-  - from-file: common/config/fish.yml
-  - from-file: common/config/brave-browser.yml
-  - from-file: common/config/rpms.yml
-  - from-file: common/config/flatpaks.yml
+  - from-file: common/config/rpm-ostree.yml
+  - from-file: common/config/default-flatpaks.yml
   - from-file: common/config/brew.yml
   - from-file: common/config/files.yml
   - from-file: common/config/justfiles.yml
-  - from-file: common/config/intel-modifications.yml
-  - from-file: common/config/fixes.yml
+  - from-file: common/config/hide-app-launchers.yml
+  - from-file: common/config/systemd.yml
+  - from-file: common/config/scripts.yml
   - from-file: common/config/virtualbox.yml
