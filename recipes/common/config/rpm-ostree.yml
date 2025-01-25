@@ -12,22 +12,25 @@ optfix:
   - brave.com
   - unityhub
 install:
+  - virt-manager
+  - VirtualBox
+
   - docker-ce
   - docker-ce-cli
   - containerd.io
   - docker-buildx-plugin
   - docker-compose-plugin
-  - virt-manager
   
   - fish
   - bat
   - eza
+
+  - ddcutil
   - xeyes
   - android-tools
   - telnet
   - wireshark
   - syncthing
-  - ddcutil
   
   - code
   - unityhub

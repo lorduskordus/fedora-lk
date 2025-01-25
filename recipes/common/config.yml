@@ -1,5 +1,6 @@
 modules:
 
+  - from-file: common/config/virtualbox-support.yml
   - from-file: common/config/rpm-ostree.yml
   - from-file: common/config/default-flatpaks.yml
   - from-file: common/config/brew.yml
@@ -8,4 +9,3 @@ modules:
   - from-file: common/config/hide-app-launchers.yml
   - from-file: common/config/systemd.yml
   - from-file: common/config/scripts.yml
-  - from-file: common/config/virtualbox.yml
