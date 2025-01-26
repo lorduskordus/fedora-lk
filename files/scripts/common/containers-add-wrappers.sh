@@ -21,6 +21,7 @@ if rpm -q podman &> /dev/null; then
         echo "  - Successfuly installed '"${WRAPPER_PODMAN}"'"
     else
         echo "  - Failed to install '"${WRAPPER_PODMAN}"'"
+        exit 1
     fi
 
 else
@@ -37,6 +38,7 @@ if rpm -q docker-ce &> /dev/null; then
         echo "  - Successfuly installed '"${WRAPPER_DOCKER}"'"
     else
         echo "  - Failed to install '"${WRAPPER_DOCKER}"'"
+        exit 1
     fi
 
 else
