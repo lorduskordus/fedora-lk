@@ -33,6 +33,11 @@ groups ACTION="prompt":
         fi
     done
 
+    if [ -z "${APP_OPTIONS}" ]; then
+        echo "No application this script knows about is installed."
+        exit 1
+    fi
+
     OPTION={{ ACTION }}
     if [ "$OPTION" == "prompt" ]; then
         OPTION=$(ugum choose "all" ${APP_OPTIONS})
