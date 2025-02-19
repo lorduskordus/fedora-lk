@@ -13,7 +13,6 @@ optfix:
   - unityhub
 install:
   - virt-manager
-  - VirtualBox
 
   - docker-ce
   - docker-ce-cli

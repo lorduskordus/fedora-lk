@@ -1,6 +1,5 @@
 modules:
 
-  - from-file: common/config/virtualbox-support.yml
   - from-file: common/config/rpm-ostree.yml
   - from-file: common/config/default-flatpaks.yml
   - from-file: common/config/brew.yml
