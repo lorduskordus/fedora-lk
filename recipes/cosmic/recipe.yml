@@ -2,7 +2,7 @@ name: fedora-lk-cosmic
 description: Custom Fedora COSMIC image based on uBlue, built with BlueBuild. (My personal, with NVIDIA support)
 
 base-image: ghcr.io/lorduskordus/fedora-base-cosmic-nvidia
-image-version: bazzite
+image-version: coreos
 
 modules:
 
