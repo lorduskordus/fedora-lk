@@ -1,7 +1,10 @@
-type: rpm-ostree
+type: dnf
+source: ghcr.io/blue-build/modules/dnf:dnf-module
 repos:
-  - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/wiiznokes/cosmic-applets-unofficial/repo/fedora-%OS_VERSION%/wiiznokes-cosmic-applets-unofficial-fedora-%OS_VERSION%.repo
+  copr:
+    - ryanabx/cosmic-epoch
+    - wiiznokes/cosmic-applets-unofficial
 install:
-  - cosmic-desktop
-  - cosmic-ext-applet-clipboard-manager
+  packages:
+    - cosmic-desktop
+    - cosmic-ext-applet-clipboard-manager

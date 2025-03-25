@@ -1,0 +1,44 @@
+type: dnf
+source: ghcr.io/blue-build/modules/dnf:dnf-module
+repos:
+  files:
+    - vscode.repo
+    - unityhub.repo
+    - https://download.docker.com/linux/fedora/docker-ce.repo
+    - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+  keys:
+    - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+    - https://packages.microsoft.com/keys/microsoft.asc
+    - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
+optfix:
+  - brave.com
+  - unityhub
+install:
+  packages:
+    - virt-manager
+
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
+    
+    - fish
+    - bat
+    - eza
+
+    - ddcutil
+    - xeyes
+    - android-tools
+    - telnet
+    - wireshark
+    - syncthing
+    
+    - code
+    - unityhub
+    - brave-browser
+
+    - steam
+    - lutris
+    - mangohud
+    - goverlay
