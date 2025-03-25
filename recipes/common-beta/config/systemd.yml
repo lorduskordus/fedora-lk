@@ -1,0 +1,6 @@
+type: systemd
+system:
+  enabled:
+    - disable-intel-turboboost.service
+    - enable-intel-powercap-read.service
+    #- docker.service

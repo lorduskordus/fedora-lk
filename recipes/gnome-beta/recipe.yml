@@ -1,0 +1,18 @@
+name: fedora-lk-gnome
+description: Custom Fedora GNOME image based on uBlue, built with BlueBuild. (My personal, with NVIDIA support)
+
+base-image: ghcr.io/lorduskordus/fedora-base-gnome-nvidia
+image-version: main-beta
+alt-tags:
+  - beta
+
+modules:
+
+  # Common
+  - from-file: common-beta/config.yml
+  
+  # GNOME
+  - from-file: gnome/config.yml
+
+  # Temporarily install COSMIC DE
+  - from-file: common/addons/cosmic-desktop.yml
