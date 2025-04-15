@@ -1,9 +1,0 @@
-modules:
-
-  - from-file: common-beta/config/dnf.yml
-  - from-file: common/config/default-flatpaks.yml
-  - from-file: common/config/brew.yml
-  - from-file: common/config/files.yml
-  - from-file: common/config/justfiles.yml
-  - from-file: common-beta/config/systemd.yml
-  - from-file: common/config/scripts.yml
