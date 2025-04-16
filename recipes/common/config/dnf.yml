@@ -21,6 +21,7 @@ install:
     - virt-manager
 
     # Install docker from test repo until its in stable
+    - libcgroup # Supposedly docker needs this
     - repo: docker-ce-test
       packages:
         - docker-ce
