@@ -14,6 +14,11 @@ set -euo pipefail
 
 echo "Editing [audio] blocks on all Tuned profiles"
 
+if ! rpm -q tuned &> /dev/null; then
+    echo "- Package Tuned is not installed, skipping."
+    exit 0;
+fi
+
 TUNED_DIR="/usr/lib/tuned/profiles"
 if [[ ! -d "$TUNED_DIR" ]]; then
     echo "- Could not find the directory: '$TUNED_DIR'"
