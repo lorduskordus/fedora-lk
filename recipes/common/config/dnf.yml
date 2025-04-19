@@ -20,15 +20,11 @@ install:
   packages:
     - virt-manager
 
-    # Install docker from test repo until its in stable
-    - libcgroup # Supposedly docker needs this
-    - repo: docker-ce-test
-      packages:
-        - docker-ce
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
 
     - fish
     - bat
