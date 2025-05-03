@@ -1,5 +1,5 @@
 [Unit]
-Description=Make Intel CPU's power readable (Can be a security risk!)
+Description=Make Intel CPU's power readable
 After=systemd-udevd.service
 After=tuned.service
 ConditionPathExists=/sys/class/powercap/intel-rapl:0/energy_uj
