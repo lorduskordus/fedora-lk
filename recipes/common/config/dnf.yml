@@ -17,8 +17,6 @@ optfix:
   - unityhub
 install:
   packages:
-    - virt-manager
-
     - docker-ce
     - docker-ce-cli
     - containerd.io
