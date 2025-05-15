@@ -6,4 +6,3 @@ system:
     - io.gitlab.news_flash.NewsFlash
     - tv.plex.PlexDesktop
     - io.github.pwr_solaar.solaar
-    - org.virt_manager.virt-manager

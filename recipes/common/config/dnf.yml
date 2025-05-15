@@ -15,6 +15,9 @@ repos:
 optfix:
   - brave.com
   - unityhub
+group-install:
+  packages:
+    - virtualization
 install:
   packages:
     - docker-ce
