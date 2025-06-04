@@ -3,6 +3,4 @@ system:
   install:
     - org.torproject.torbrowser-launcher
     - com.vysp3r.ProtonPlus
-    - io.gitlab.news_flash.NewsFlash
     - tv.plex.PlexDesktop
-    - io.github.pwr_solaar.solaar
