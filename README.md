@@ -14,10 +14,12 @@ These images are built on top of the 'minimal' [Fedora Base](https://github.com/
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-cosmic
 ```
+<!--
 ##### GNOME (NVIDIA)
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-gnome
 ```
+-->
 ##### KDE (NVIDIA)
 ```
 ostree-image-signed:docker://ghcr.io/lorduskordus/fedora-lk-kde
