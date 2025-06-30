@@ -2,7 +2,7 @@
 
 # Intel's power_save causes audio popping
 #   - It has to be disabled in a kernel module argument.
-#     Currently, it is done with [/etc/modprobe.d/alsa-disable-power-save.conf]
+#     Currently, it is done with [/etc/modprobe.d/intel-disable-power-save.conf]
 #
 #   - Tuned profiles can alter the power_save state.
 #     This script sets timeout=0 to [audio] blocks on all Tuned profiles, that
