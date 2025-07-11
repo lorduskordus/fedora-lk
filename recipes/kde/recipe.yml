@@ -10,7 +10,7 @@ modules:
   - from-file: common/config.yml
   
   # KDE
-  #- from-file: kde/config.yml
+  - from-file: kde/config.yml
 
   # Temporarily install COSMIC DE
   - from-file: common/addons/cosmic-desktop.yml
