@@ -1,15 +1,12 @@
 name: fedora-lk-kde
-description: Custom Fedora KDE image based on uBlue, built with BlueBuild. (My personal, with NVIDIA support)
+description: Customized Fedora KDE Atomic
 
 base-image: ghcr.io/lorduskordus/fedora-base-kde-nvidia
 image-version: latest
 
 modules:
 
-  # Common
   - from-file: common/config.yml
-  
-  # KDE
   - from-file: kde/config.yml
 
   # Temporarily install COSMIC DE
