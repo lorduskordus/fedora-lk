@@ -1,6 +1,7 @@
 type: default-flatpaks
-system:
-  install:
-    - org.torproject.torbrowser-launcher
-    - com.vysp3r.ProtonPlus
-    - tv.plex.PlexDesktop
+configurations:
+  - scope: system
+    install:
+      - org.torproject.torbrowser-launcher
+      - com.vysp3r.ProtonPlus
+      - tv.plex.PlexDesktop
