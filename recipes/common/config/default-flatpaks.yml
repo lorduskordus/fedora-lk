@@ -1,6 +1,7 @@
 type: default-flatpaks
 configurations:
   - scope: system
+    notify: true
     install:
       - org.torproject.torbrowser-launcher
       - com.vysp3r.ProtonPlus
