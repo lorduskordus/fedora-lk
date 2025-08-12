@@ -12,13 +12,18 @@ OPTIONS='$([ -f "'"$BRAVE_FLAGS_FILE"'" ] \&\& cat "'"$BRAVE_FLAGS_FILE"'" | sed
 ORIGINAL_STR='"$HERE/brave" "$@" || true'
 NEW_STR='"$HERE/brave" "$@" "'$OPTIONS'" || true'
 
-echo "Adding support for flags file inclusion to Brave browser"
+echo "Adding support for flags file inclusion to the RPM version of Brave browser"
+
+if ! command -v brave-browser &> /dev/null; then
+    echo "- Brave is not installed as an RPM package. Flatpak version supports flags out of the box. Skipping."
+    exit 0
+fi
 
 if [ -f "$BRAVE_WRAPPER" ]; then
     echo "- Found the wrapper '$BRAVE_WRAPPER'."
 else
     echo "- Error: Could not find the wrapper '$BRAVE_WRAPPER'."
-    echo "    - Either Brave is not installed, or someone upstream f'd up and changed how Brave is installed."
+    echo "    - Someone upstream f'd up and changed how Brave is installed."
     exit 1
 fi
 
