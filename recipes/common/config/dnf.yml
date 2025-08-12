@@ -6,14 +6,12 @@ repos:
     - https://download.docker.com/linux/fedora/docker-ce.repo
     - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
   keys:
-    - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     - https://packages.microsoft.com/keys/microsoft.asc
     - https://hub.unity3d.com/linux/repos/rpm/stable/repodata/repomd.xml.key
   copr:
     # F42 doesn't have eza, this COPR does
     - alternateved/eza
 optfix:
-  - brave.com
   - unityhub
 group-install:
   packages:
@@ -40,7 +38,6 @@ install:
     
     - code
     - unityhub
-    - brave-browser
 
     - steam
     - lutris
