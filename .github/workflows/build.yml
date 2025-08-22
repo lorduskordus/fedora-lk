@@ -25,7 +25,6 @@ jobs:
       matrix:
         recipe:
           - cosmic/recipe.yml
-          # - gnome/recipe.yml
           - kde/recipe.yml
     steps:
       - name: Build
