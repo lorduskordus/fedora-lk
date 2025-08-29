@@ -35,6 +35,7 @@ install:
     - nmap
     - wireshark
     - syncthing
+    - nextcloud-client
     
     - code
     - unityhub
