@@ -28,12 +28,12 @@ install:
     - bat
     - eza
 
-    - ddcutil
-    - xeyes
     - android-tools
+
     - telnet
     - nmap
     - wireshark
+
     - syncthing
     - nextcloud-client
     
