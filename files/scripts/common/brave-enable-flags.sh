@@ -29,15 +29,11 @@ fi
 
 if grep -qF "$ORIGINAL_STR" "$BRAVE_WRAPPER"; then
     echo "- Found correct string in the wrapper."
+    sed -i "s:$ORIGINAL_STR:$NEW_STR:" "$BRAVE_WRAPPER"; then
 else
     echo "- Error: Could not find string '$ORIGINAL_STR' in the wrapper."
     echo "    - Someone upstream probably f'd up and changed the string."
     exit 1
 fi
 
-if sed -i "s:$ORIGINAL_STR:$NEW_STR:" "$BRAVE_WRAPPER"; then
-    echo "- Successfully modified the wrapper."
-else
-    echo "- Error: Failed to modify the wrapper."
-    exit 1
-fi
+echo "- Done."
