@@ -9,8 +9,8 @@ DESKTOP_FILE="/usr/share/applications/unityhub.desktop"
 echo "Make Unity use discrete GPU and MangoHUD"
 
 if ! command -v unityhub &> /dev/null; then
-    echo "- Unity is not installed as an RPM package. Exiting."
-    exit 1
+    echo "- Unity is not installed as an RPM package. Skipping."
+    exit 0
 fi
 
 if [ -f "$DESKTOP_FILE" ]; then
