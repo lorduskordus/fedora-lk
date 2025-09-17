@@ -42,7 +42,7 @@ NEW_EXEC_STR='Exec=/usr/bin/mangohud /opt/unityhub/unityhub %U'
 echo "- MangoHUD"
 
 if ! command -v mangohud &> /dev/null; then
-    echo "  - Not installed as an RPM package. Exiting."
+    echo "  - Error: Not installed as an RPM package."
     exit 1
 fi
 
