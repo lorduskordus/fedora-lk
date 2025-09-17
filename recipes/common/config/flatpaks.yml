@@ -11,3 +11,7 @@ configurations:
       - org.torproject.torbrowser-launcher
       - com.vysp3r.ProtonPlus
       - tv.plex.PlexDesktop
+      - it.mijorus.gearlever
+      - org.winehq.Wine
+      - eu.betterbird.Betterbird
+      - org.onlyoffice.desktopeditors
