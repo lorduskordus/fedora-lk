@@ -27,7 +27,6 @@ install:
 
     - android-tools
 
-    - telnet
     - nmap
     - wireshark
 
