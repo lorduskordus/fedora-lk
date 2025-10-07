@@ -10,8 +10,6 @@ repos:
   copr:
     # F42 doesn't have eza, this COPR does
     - alternateved/eza
-optfix:
-  - unityhub
 group-install:
   packages:
     - virtualization
