@@ -8,8 +8,7 @@ modules:
       packages:
         - cosmic-desktop
         - gnome-keyring-pam
-
-        - https://github.com/D-Brox/cosmic-ext-applet-privacy-indicator/releases/download/v0.1.2/cosmic-ext-applet-privacy-indicator-0.1.2-1.x86_64.rpm
+        - gvfs*
 
   - type: default-flatpaks
     configurations:
