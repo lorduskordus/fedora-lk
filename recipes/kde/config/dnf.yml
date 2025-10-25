@@ -1,9 +1,15 @@
-type: dnf
-repos:
-  copr:
-    - matinlotfali/KDE-Rounded-Corners
-    - hazel-bunny/ricing
-install:
-  packages:
-    - kwin-effect-roundcorners
-    - kwin-effects-forceblur
+modules:
+
+  - type: script
+    scripts:
+      - kde/get-latest-plasma.sh
+
+  - type: dnf
+    repos:
+      copr:
+        - matinlotfali/KDE-Rounded-Corners
+        - hazel-bunny/ricing
+    install:
+      packages:
+        - kwin-effect-roundcorners
+        - kwin-effects-forceblur
